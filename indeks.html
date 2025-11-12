@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNova - Solusi Digital Inovatif</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #0d6efd;
+      --secondary-color: #6c757d; 
+      --dark-color: #1a233b; 
+      --light-color: #f8f9fa; 
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      color: var(--dark-color);
+    }
+
+    .navbar-brand {
+      font-weight: 700 !important;
+      color: var(--primary-color) !important;
+    }
+
+    /* Peningkatan Hero Section */
+    .hero-section {
+      background: linear-gradient(135deg, var(--dark-color), #2c3e50); 
+      color: white;
+      padding: 150px 0 100px 0; 
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-section h1 {
+        font-weight: 700;
+        letter-spacing: -1px; 
+    }
+
+    /* Efek Hover untuk Card Fitur */
+    .feature-icon {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+    }
+
+    .feature-card {
+      transition: all 0.3s ease-in-out;
+      border-radius: 12px;
+      border: 1px solid #e9ecef; 
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(13, 110, 253, 0.15); 
+    }
+
+    .about-section {
+      background-color: var(--light-color);
+      padding: 80px 0;
+    }
+
+    .contact-section {
+        background-color: #ffffff;
+        padding: 80px 0;
+    }
+
+    .footer {
+      background-color: var(--dark-color);
+      color: white;
+      padding: 40px 0;
+      font-size: 0.9rem;
+    }
+
+    .footer a {
+      color: #adb5bd;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer a:hover {
+      color: var(--primary-color);
+    }
+
+    /* Utility */
+    .text-primary-dark {
+        color: var(--dark-color) !important;
+    }
+    .bg-primary-light {
+        background-color: #e3f2fd !important; 
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm"> <div class="container">
+      <a class="navbar-brand fw-bold" href="#">TechNova</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-3 fw-bold">Transformasi Digital untuk Bisnis Anda</h1> <p class="lead mb-5 mt-3">TechNova menghadirkan solusi teknologi cerdas, aman, dan skalabel untuk mengembangkan bisnis Anda ke level berikutnya.</p>
+      <a href="#features" class="btn btn-primary btn-lg me-3 shadow-lg">Lihat Layanan Kami <i class="bi bi-arrow-right"></i></a>
+      <a href="#contact" class="btn btn-outline-light btn-lg shadow-lg">Mulai Proyek</a>
+    </div>
+  </section>
+
+  <section id="features" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+          <span class="badge rounded-pill bg-primary-light text-primary-dark mb-2">LAYANAN UTAMA</span> <h2 class="fw-bold mb-4">Solusi Yang Kami Tawarkan</h2>
+          <p class="text-secondary">Kami fokus pada tiga pilar utama yang dibutuhkan setiap bisnis di era digital.</p>
+      </div>
+      <div class="row g-5">
+        <div class="col-md-4">
+          <div class="card feature-card p-4 h-100 text-center">
+            <div class="d-flex justify-content-center mb-3">
+              <i class="bi bi-robot feature-icon"></i> </div>
+            <h5 class="fw-bold text-primary-dark">Intelejen Bisnis (AI & ML)</h5>
+            <p class="text-secondary">Integrasi teknologi Artificial Intelligence untuk otomatisasi proses dan pengambilan keputusan berbasis data yang akurat.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card p-4 h-100 text-center">
+            <div class="d-flex justify-content-center mb-3">
+              <i class="bi bi-cloud-check-fill feature-icon"></i> </div>
+            <h5 class="fw-bold text-primary-dark">Infrastruktur Cloud Skalabel</h5>
+            <p class="text-secondary">Penyediaan infrastruktur Cloud yang efisien, aman, dan mudah diskalakan sesuai pertumbuhan kebutuhan bisnis Anda.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card p-4 h-100 text-center">
+            <div class="d-flex justify-content-center mb-3">
+              <i class="bi bi-lock-fill feature-icon"></i> </div>
+            <h5 class="fw-bold text-primary-dark">Keamanan Siber Terdepan</h5>
+            <p class="text-secondary">Implementasi sistem keamanan siber terkini untuk melindungi aset digital Anda dari ancaman dan kerentanan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="my-5"> <section id="about" class="about-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="https://cdn.pixabay.com/photo/2017/06/29/00/36/startup-2452806_960_720.jpg" alt="Tentang TechNova" class="img-fluid rounded shadow-lg">
+        </div>
+        <div class="col-lg-6 ps-lg-5">
+          <span class="badge rounded-pill bg-primary-light text-primary-dark mb-2">SEJAK 2015</span>
+          <h2 class="fw-bold mb-3">Tentang TechNova: Menciptakan Nilai</h2>
+          <p class="lead">TechNova adalah mitra terpercaya Anda dalam transformasi digital. Kami tidak hanya menyediakan teknologi, tetapi juga strategi untuk memastikan kesuksesan jangka panjang bisnis Anda.</p>
+          <p>Kami berdedikasi membantu perusahaan meningkatkan efisiensi, keamanan, dan daya saing melalui produk serta layanan berbasis teknologi mutakhir.</p>
+          <div class="row mt-4">
+              <div class="col-6">
+                  <h3 class="fw-bold text-primary-dark">10+</h3>
+                  <p class="text-secondary">Tahun Pengalaman</p>
+              </div>
+              <div class="col-6">
+                  <h3 class="fw-bold text-primary-dark">200+</h3>
+                  <p class="text-secondary">Klien Global Terlayani</p>
+              </div>
+          </div>
+          <a href="#contact" class="btn btn-primary mt-3">Bergabung dengan Mitra Kami <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="text-center mb-5">
+          <h2 class="fw-bold mb-4">Mari Bicara Tentang Proyek Anda</h2>
+          <p class="text-secondary">Isi formulir di bawah ini dan tim ahli kami akan segera menghubungi Anda untuk konsultasi gratis.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <form class="p-5 shadow-lg rounded bg-light"> <div class="mb-3">
+              <label for="name" class="form-label fw-bold">Nama Lengkap</label>
+              <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label fw-bold">Alamat Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label fw-bold">Subjek</label>
+              <input type="text" class="form-control" id="subject" placeholder="Misal: Konsultasi Pengembangan Aplikasi" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label fw-bold">Pesan</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Jelaskan kebutuhan Anda secara singkat..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mt-3 fw-bold">Kirim Permintaan Konsultasi</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="mb-3">&copy; 2025 TechNova. All Rights Reserved. | Solusi Digital Inovatif</p>
+      <div>
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
